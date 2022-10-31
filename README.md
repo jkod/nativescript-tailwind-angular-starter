@@ -2,7 +2,7 @@
 
 ![Screenshot](./screenshot.png)
 
-This repo is a small starting point for building a native iOS and Android with Tailwind CSS, [NativeScript](https://nativescript.com/), and [Angular](https://angular.com/).
+This repo is a small starting point for building a native iOS and Android app with Tailwind CSS, [NativeScript](https://nativescript.com/), and [Angular](https://angular.com/).
 
 The app is very much inspired by the [Next.js + Tailwind CSS + Ionic Framework + Capacitor Mobile Starter](https://dev.to/ionic/build-mobile-apps-with-tailwind-css-next-js-ionic-framework-and-capacitor-3kij) and attempts to recreate some of the experience.
 
