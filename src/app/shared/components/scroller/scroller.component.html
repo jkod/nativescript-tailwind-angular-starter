@@ -1,0 +1,14 @@
+<ActionBar id="bar" title="Home">
+    <StackLayout orientation="horizontal">
+        <label #header [text]="title" class="text-xl font-semibold text-slate-900 dark:text-slate-200"
+            verticalAlignment="center"></label>
+    </StackLayout>
+</ActionBar>
+<ScrollView #scrollView (scroll)="onScroll($event, scrollView, topView, header)">
+    <StackLayout class="w-full py-10 px-4">
+        <Label #topView class="font-bold text-4xl text-gray-800 dark:text-gray-100 py-4 px-4 mt-4"
+            [text]="title"></Label>
+        <StackLayout class="w-full h-px bg-gray-300 my-2"></StackLayout>
+        <ng-content></ng-content>
+    </StackLayout>
+</ScrollView>

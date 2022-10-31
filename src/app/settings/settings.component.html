@@ -1,0 +1,12 @@
+<ActionBar>
+  <StackLayout orientation="horizontal">
+    <label text="Settings" class="text-xl font-semibold text-slate-900 dark:text-slate-200"
+      verticalAlignment="center"></label>
+  </StackLayout>
+</ActionBar>
+<GridLayout class="page__content">
+  <FlexboxLayout flexDirection="column">
+    <Label text="Appearance" class="text-lg text-gray-500 p-4 dark:text"></Label>
+    <ns-toggle-bar [items]="modes" (onToggle)="toggleMode($event)"></ns-toggle-bar>
+  </FlexboxLayout>
+</GridLayout>

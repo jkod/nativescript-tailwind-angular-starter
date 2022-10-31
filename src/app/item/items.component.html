@@ -1,0 +1,37 @@
+<!-- The [columns] bit here makes this app a two-column layout on tablets, and a one-column layout on phones -->
+<GridLayout [columns]="isTablet ? '*, 2*' : '*'">
+  <GridLayout col="0" class="left-column" #left>
+
+    <ns-scroller title="Items">
+      <ng-container *ngFor="let item of items">
+        <CardView (tap)="select(item)" margin="16" elevation="40" shadowRadius="6" shadowOpacity="0.25" radius="2"
+          class="my-4 bg-transparent mx-auto rounded-t-xl">
+          <StackLayout>
+            <NSImg class="h-32 rounded-t-xl w-full bg-transparent" stretch="aspectFill" verticalAlignment="center"
+              placeholderImageUri="res://ns_logo" src="~/assets/images/fcb.png">
+            </NSImg>
+            <StackLayout class="px-4 py-4 rounded-b-xl bg-white dark:bg-gray-900">
+              <Label [text]="item.id" class="font-bold py-0 text-gray-400 dark:text-gray-500 uppercase"></Label>
+              <Label [text]="item.name" class="font-bold text-2xl text-gray-800 dark:text-gray-100"></Label>
+              <FlexboxLayout class="flex items-center space-x-4">
+                <NSImg class="w-10 h-10 rounded-full" roundAsCircle="true" stretch="aspectFill" verticalAlignment="center"
+                  placeholderImageUri="res://ns_logo" src="~/assets/images/fcb.png">
+                </NSImg>
+                <Label [text]="item.role" class="text-gray-500 dark:text-gray-200 m-l-8 text-sm font-medium"></Label>
+              </FlexboxLayout>
+            </StackLayout>
+          </StackLayout>
+        </CardView>
+      </ng-container>
+    </ns-scroller>
+  </GridLayout>
+
+  <FlexboxLayout flexDirection="column" col="1" class="p-20" *ngIf="isTablet && selected">
+    <FlexboxLayout class="m-15">
+      <Label class="h2" [text]="selected.id + '. '"></Label>
+      <Label class="h2" [text]="selected.name"></Label>
+    </FlexboxLayout>
+    <Label class="h4 m-15" [text]="selected.role"></Label>
+  </FlexboxLayout>
+
+</GridLayout>

@@ -1,0 +1,7 @@
+<GridLayout class="toggle flex rounded-lg bg-slate-100 dark:text-gray-100" [columns]="'*,'.repeat(items.length)"
+    (loaded)="onToggleLoaded($event)">
+    <Label id="toggler"
+        class="toggler bg-white dark:bg-gray-900 dark:text-gray-100 border-slate-500 rounded-lg mx-1"></Label>
+    <Label *ngFor="let item of items; let col = index" [col]="col" [text]="item"
+        class="toggle-label text-center flex items-center rounded-md text-sm font-semibold  dark:text-gray-500"></Label>
+</GridLayout>

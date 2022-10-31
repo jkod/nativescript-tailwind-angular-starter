@@ -1,0 +1,33 @@
+{
+  "name": "stackblitz-nativescript-angular",
+  "main": "./src/main.ts",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "~14.2.0",
+    "@angular/common": "~14.2.0",
+    "@angular/compiler": "~14.2.0",
+    "@angular/core": "~14.2.0",
+    "@angular/forms": "~14.2.0",
+    "@angular/platform-browser": "~14.2.0",
+    "@angular/platform-browser-dynamic": "~14.2.0",
+    "@angular/router": "~14.2.0",
+    "@nativescript/angular": "~14.2.0",
+    "@nativescript/core": "~8.3.0",
+    "@nativescript/theme": "~3.0.2",
+    "rxjs": "~7.5.0",
+    "zone.js": "~0.11.5"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~14.2.0",
+    "@angular/compiler-cli": "~14.2.0",
+    "@nativescript/preview-cli": "1.0.2",
+    "@nativescript/stackblitz": "0.0.5",
+    "@nativescript/tailwind": "^2.0.1",
+    "@nativescript/types-minimal": "~8.3.0",
+    "@nativescript/webpack": "~5.0.0",
+    "@ngtools/webpack": "~14.2.0",
+    "tailwindcss": "^3.1.8",
+    "typescript": "~4.7.0"
+  }
+}
