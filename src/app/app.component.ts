@@ -4,13 +4,6 @@ import { Frame, isIOS } from "@nativescript/core";
 import { ad } from "@nativescript/core/utils";
 import Theme from "@nativescript/theme";
 
-interface IState {
-  sideDrawer: {
-    isOpen?: boolean;
-    items: { text: string; active: boolean }[];
-  };
-}
-
 @Component({
   selector: "ns-app",
   templateUrl: "./app.component.html",

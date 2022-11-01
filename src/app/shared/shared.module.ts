@@ -1,10 +1,7 @@
 import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
 import { NativeScriptCommonModule } from "@nativescript/angular";
 
-import {
-  ScrollerComponent,
-  ToggleBarComponent,
-} from "./components";
+import { ScrollerComponent, ToggleBarComponent } from "./components";
 
 @NgModule({
   imports: [NativeScriptCommonModule],
