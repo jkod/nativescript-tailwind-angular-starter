@@ -6,9 +6,9 @@
 </ActionBar>
 
 <FlexboxLayout flexDirection="column">
-  <NSImg class="h-64 w-full bg-transparent" stretch="aspectFill" verticalAlignment="center"
-    placeholderImageUri="res://ns_logo" src="~/assets/images/fcb.png">
-  </NSImg>
+  <ImageCacheIt class="h-64 w-full bg-transparent" stretch="aspectFill" verticalAlignment="center"
+    src="~/assets/images/fcb.png">
+  </ImageCacheIt>
   <FlexboxLayout class="m-4">
     <Label class="text-3xl text-gray-400" [text]="item.id + '. '"></Label>
     <Label class="text-3xl" [text]="item.name"></Label>

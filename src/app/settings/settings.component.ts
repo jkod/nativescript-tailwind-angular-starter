@@ -1,5 +1,4 @@
 import { Component, OnInit } from "@angular/core";
-import { EventData, Switch } from "@nativescript/core";
 
 import Theme from "@nativescript/theme";
 

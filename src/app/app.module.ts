@@ -1,16 +1,7 @@
 import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
 import { NativeScriptModule, registerElement } from "@nativescript/angular";
 
-import { TNSImageModule } from "@nativescript-community/ui-image/angular";
-import * as imageModule from "@nativescript-community/ui-image";
-import * as applicationModule from "@nativescript/core/application";
-
-if (applicationModule.android) {
-  applicationModule.on(applicationModule.launchEvent, () => {
-    console.log("initialize pipeline");
-    imageModule.initialize();
-  });
-}
+import { ImageCacheItModule } from "@triniwiz/nativescript-image-cache-it/angular";
 
 import { CardView } from "@nstudio/nativescript-cardview";
 registerElement("CardView", () => CardView);
@@ -27,7 +18,7 @@ import { AppComponent } from "./app.component";
     NativeScriptModule,
     AppRoutingModule,
     SharedModule,
-    TNSImageModule,
+    ImageCacheItModule,
   ],
   declarations: [AppComponent],
   providers: [],
